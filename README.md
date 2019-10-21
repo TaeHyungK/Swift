@@ -76,6 +76,41 @@
 
 
 
+### 컬렉션 타입
+
+- Array - 순서가 있는 리스트 컬렉션
+  - 배열과 유사함
+  - Array\<Int\>, [Int]
+  - append(): 요소 추가
+  - contains(value): 해당 요소가 있는지 체크 (return: Bool)
+  - remove(value: int): 해당 index의 값 제거
+  - removeLast(): 마지막 요소 제거
+  - removeAll(): 모든 요소 제거
+  - count: 총 갯수
+  - let 키워드로 선언 시 불변 Array로 append, remove 등 사용 불가
+- Dictionary - 키와 값의 쌍으로 이루어진 컬렉션
+  - Map과 비슷
+  - Dictionary<String, Any>, [String: Any]
+  - removeValue(forKey: value): value를 가진 값제거
+  - dictionary[keyValue] = nil: keyValue를 가진 값을 제거
+  - 빈 Dictionary의 표현: [:]
+- Set - 순서가 없고 멤버가 유일한 컬렉션
+  - 중복이 없음
+  - Set<Int>
+  - insert(): 요소 추가
+  - contains(): 요소 유무 체크
+  - remove(): 요소 삭제
+  - removeFirst(): 첫번째 요소 삭제
+  - count: 총 갯수
+  - union(): 합집합을 만듦
+  - sorted(): 정렬
+  - intersection(): 교집함
+  - subtracting(): 차집합
+
+### 컬렉션 타입(Array, Dictionary, Set)
+
+
+
 ### 기타
 
 - 띄어쓰기에 민감하므로 띄어쓰기 잘못하면 compile error가 나올 수 있음
