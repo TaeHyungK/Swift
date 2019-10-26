@@ -189,6 +189,8 @@
 
 ### 옵셔널
 
+![스크린샷 2019-10-27 오전 1.04.16](/var/folders/2t/1m1d23g93gd28qsyzbskhrrh0000gn/T/TemporaryItems/(screencaptureui이(가) 문서 저장 중 6)/스크린샷 2019-10-27 오전 1.04.16.png)
+
 - optional: 값이 있을 수도 있고 없을 수도 없음을 뜻함
 
 - 필요 이유?
@@ -225,6 +227,19 @@
   - enum이기 때문에 switch로 값이 있는지 체크 확인 가능
   - 기존 변수처럼 연산이 가능
   - 잘못된 사용으로 compile error 발생할 수 있음
+
+
+
+### 옵셔널 추출 (Optional Unwrapping)
+
+- Optional Binding - 옵셔널 바인딩
+  - 옵셔널의 값을 꺼내오는 방법 중 하나
+  - nil 체크 + 안전한 값 추출
+  - if-let 방식
+- Force Unwrapping - 옵셔널 강제 추출
+  - 옵셔널의 값을 강제로 꺼내오는 방식
+  - 강제 추출 시 값이 없을 경우 런타임 오류 발생
+    - 런타임 오류 발생 여부가 있으므로 추천하지 않음
 
 ### 컬렉션 타입(Array, Dictionary, Set)
 
