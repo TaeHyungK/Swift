@@ -169,6 +169,22 @@
   - 명시적으로 break를 하지 않아도 break가 걸림
   - case 에 콤마(,) 혹은 fallthorugh 키워드로 break를 피해갈 수 있음
 
+
+
+### 반복문
+
+- for - in
+  - for each문과 동일
+  - for <item명> in <for 문 돌릴 배열>
+- while
+  - while 문과 동일
+  - while 조건 { 동작 }
+- repeat - while
+  - do-while문과 동일
+  - repeat { 동작 } while 조건
+  - do라는 키워드를 사용하지 않는 이유?
+    - 오류 처리 구문에서 사용하기 때문
+
 ### 컬렉션 타입(Array, Dictionary, Set)
 
 
