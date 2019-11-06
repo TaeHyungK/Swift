@@ -327,9 +327,6 @@
   - public struct Set\<Element : Hashable\>
   - 모두 구조체로 선언되어 있음
 
-### 컬렉션 타입(Array, Dictionary, Set)
-
-
 
 ### 기타
 
