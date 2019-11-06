@@ -278,6 +278,56 @@
   - rawValue를 통해 초기화한 인스턴스는 해당 rawValue에 맞는 값이 없을 수 있기 때문에 옵셔널 타입임
 - enum에 메소드도 정의가 가능
 
+
+
+### 클래스 vs 구조체/열거형 (참조타입과 값타입)
+
+- Class
+  - 전통적인 OOP 관점에서의 클래스
+  - 단일 상속
+  - (인스턴스/타입) 메소드
+  - (인스턴스/타입) 프로퍼티
+  - **참조 타입**
+  - Apple 프레임워크의 대부분의 큰 뼈대는 모두 클래스로 구성되어 있음
+- Struct
+  - C 언어 등의 구조체보다 다양한 기능을 가짐
+  - 상속 불가
+  - (인스턴스/타입) 메소드
+  - (인스턴스/타입) 프로퍼티
+  - **값 타입**
+  - Swift의 대부분의 큰 뼈대는 모두 구조체로 구성되어 있음
+- Enum
+  - 다른 언어의 열거형과는 많이 다른 존재
+  - 상속 불가
+  - (인스턴스/타입) 메소드
+  - (인스턴스/타입) 연산 프로퍼티
+  - **값 타입**
+  - Enumeration
+  - 유사한 종류의 여러 값을 유의미한 이름으로 한 곳에 모아 정의 (ex. 요일, 상태값, 월(Month) 등)
+  - **열거형 자체가 하나의 데이터 타입,**
+    **열거형의 case 하나하나 전부 하나의 유의미한 값으로 취급**
+  - 선언 키워드 - enum
+  - ![스크린샷 2019-11-06 오후 10.50.52](/var/folders/2t/1m1d23g93gd28qsyzbskhrrh0000gn/T/TemporaryItems/(screencaptureui이(가) 문서 저장 중 8)/스크린샷 2019-11-06 오후 10.50.52.png)
+- 구조체는 언제 사용하나?
+  - 연관된 몇몇의 값들을 모아서 하나의 데이터 타입으로 표현하고 싶을 때
+  - 다른 객체 또는 함수 등으로 전달될 때 **참조가 아닌 복사를 원할 때**
+  - 자신을 상속할 필요가 없거나, 자신이 다른 타입을 **상속받을 필요가 없을 때**
+  - Apple 프레임워크에서 프로그래밍을 할 때에는 주로 클래스를 많이 사용
+- Value vs Reference
+  - Value
+    - 데이터를 전달할 때 값을 **복사하여 전달**
+  - Reference
+    - 데이터를 전달할 때 값의 **메모리 위치를 전달**
+
+- Data types in Swift
+  - public struct Int
+  - public struct Double
+  - public struct String
+  - public struct Dictionary<Key : Hashable, Value>
+  - public struct Array\<Element\>
+  - public struct Set\<Element : Hashable\>
+  - 모두 구조체로 선언되어 있음
+
 ### 컬렉션 타입(Array, Dictionary, Set)
 
 
